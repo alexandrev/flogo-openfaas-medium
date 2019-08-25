@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://abc59586cc33f11e9941b069251daa7b-1114483165.eu-west-2.elb.amazonaws.com:8080
+functions:
+  flogo-test:
+    lang: dockerfile
+    handler: ./flogo-test
+    image: alexandrev/flogo-test:1.8
